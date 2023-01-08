@@ -1,0 +1,80 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\net6.0\UnsualLotery.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.11" />
+    <PackageReference Include="Flunt" Version="2.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Domain\" />
+    <None Remove="Domain\Lotery\" />
+    <None Remove="Endpoints\" />
+    <None Remove="Endpoints\Lotery\" />
+    <None Remove="Infra\" />
+    <None Remove="Infra\Data\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Services\" />
+    <None Remove="Services\Users\" />
+    <None Remove="Endpoints\Users\" />
+    <None Remove="Endpoints\Lotery\Raffles\" />
+    <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <None Remove="Microsoft.AspNet.Identity.EntityFramework" />
+    <None Remove="Endpoints\Lotery\Raffles\Get\" />
+    <None Remove="Endpoints\Lotery\Raffles\Post\" />
+    <None Remove="Endpoints\Users\Post\" />
+    <None Remove="Endpoints\Users\Get\" />
+    <None Remove="Endpoints\Lotery\Quotas\" />
+    <None Remove="Endpoints\Lotery\Quotas\Get\" />
+    <None Remove="Endpoints\Security\" />
+    <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
+    <None Remove="Endpoints\Users\Put\" />
+    <None Remove="Services\Security\" />
+    <None Remove="Swashbuckle.AspNetCore.Annotations" />
+    <None Remove="Services\Validations\" />
+    <None Remove="Flunt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain\" />
+    <Folder Include="Domain\Lotery\" />
+    <Folder Include="Endpoints\" />
+    <Folder Include="Endpoints\Lotery\" />
+    <Folder Include="Infra\" />
+    <Folder Include="Infra\Data\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Users\" />
+    <Folder Include="Endpoints\Users\" />
+    <Folder Include="Endpoints\Lotery\Raffles\" />
+    <Folder Include="Services\" />
+    <Folder Include="Endpoints\Lotery\Raffles\Get\" />
+    <Folder Include="Endpoints\Lotery\Raffles\Post\" />
+    <Folder Include="Endpoints\Users\Post\" />
+    <Folder Include="Endpoints\Users\Get\" />
+    <Folder Include="Endpoints\Lotery\Quotas\" />
+    <Folder Include="Endpoints\Lotery\Quotas\Get\" />
+    <Folder Include="Endpoints\Security\" />
+    <Folder Include="Endpoints\Users\Put\" />
+    <Folder Include="Services\Security\" />
+    <Folder Include="Services\Validations\" />
+  </ItemGroup>
+</Project>
